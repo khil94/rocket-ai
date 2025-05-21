@@ -1,6 +1,6 @@
+import Chapter from "@/components/chapter";
 import { rate } from "@/constants/rate";
 import Image from "next/image";
-import Mark from "../assets/mark.svg";
 import UpCloud from "../assets/up-cloud.svg";
 
 export default function FirstSection() {
@@ -23,11 +23,7 @@ export default function FirstSection() {
           }}
         />
       </div>
-      <div className="absolute text-center flex flex-col gap-2 top-1/6 left-1/2 -translate-x-1/2 ">
-        <span>제 1장</span>
-        <Mark />
-        <span>나의 사주 팔자</span>
-      </div>
+      <Chapter upperText="제 1장" lowerText="나의 사주 팔자" />
       <Image
         className=""
         src={"/first-img.png"}
