@@ -1,15 +1,22 @@
+import { rate } from "@/constants/rate";
 import Image from "next/image";
 
 export default function SecondSection() {
   return (
     <div className="relative w-full h-full">
-      <div className="flex justify-end">
-        <Image src={"/cloud.png"} width={153} height={120} alt="cloud" />
+      <Image
+        className="absolute bottom-1/10 left-0 opacity-[80%]"
+        src={"/cloud.png"}
+        width={153 * rate}
+        height={120 * rate}
+        alt="cloud"
+      />
+      <div className="relative flex justify-end">
         <Image
           className="mr-8"
-          src={"/second.jpg"}
-          width={120}
-          height={285}
+          src={"/second.png"}
+          width={161 * rate}
+          height={285 * rate}
           alt="second"
         />
       </div>
