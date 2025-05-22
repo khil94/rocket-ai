@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function SecondSection() {
   const rate = useResponsiveRate();
   return (
-    <div className="relative w-full h-full mb-10">
+    <div className="relative w-full h-full mb-[10%]">
       <Image
         className="absolute bottom-1/10 left-0 opacity-[80%]"
         src={"/cloud.png"}
@@ -14,7 +14,7 @@ export default function SecondSection() {
       />
       <div className="relative flex justify-end">
         <Image
-          className="mr-8"
+          className="mr-[10%]"
           src={"/second.png"}
           width={161 * rate}
           height={285 * rate}

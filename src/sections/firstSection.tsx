@@ -6,7 +6,7 @@ import UpCloud from "../assets/up-cloud.svg";
 export default function FirstSection() {
   const rate = useResponsiveRate();
   return (
-    <div className="relative w-full h-full mb-30">
+    <div className="relative w-full h-full mb-[30%]">
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-0 left-0 w-full"
