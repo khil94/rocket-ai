@@ -1,9 +1,11 @@
+import { thirdSectionText } from "@/constants/text";
 import { useResponsiveRate } from "@/hooks/useResponsiveRate";
 import Image from "next/image";
 import DownCloud from "../assets/down-cloud.svg";
 
 export default function ThirdSection() {
   const rate = useResponsiveRate();
+  const name = "ㅇㅇ";
   return (
     <div className="relative w-full h-full">
       <div className="absolute inset-0 pointer-events-none">
@@ -20,7 +22,7 @@ export default function ThirdSection() {
           <DownCloud width={239 * rate} />
           <div className="absolute inset-0 -top-1/8 text-black flex items-center justify-center">
             <p className="text-xs max-w-3/5 ssm:text-sm text-center break-keep leading-snug">
-              제가 ㅇㅇ님의 사주를 보기 쉽게 표로 정리했어요.
+              {thirdSectionText.cloud(name)}
             </p>
           </div>
         </div>

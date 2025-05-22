@@ -1,10 +1,12 @@
 import Chapter from "@/components/chapter";
+import { firstSectionText } from "@/constants/text";
 import { useResponsiveRate } from "@/hooks/useResponsiveRate";
 import Image from "next/image";
 import UpCloud from "../assets/up-cloud.svg";
 
 export default function FirstSection() {
   const rate = useResponsiveRate();
+  const name = "ㅇㅇ";
   return (
     <div className="relative w-full h-full mb-[30%]">
       <div className="absolute inset-0 pointer-events-none">
@@ -24,7 +26,10 @@ export default function FirstSection() {
           }}
         />
       </div>
-      <Chapter upperText="제 1장" lowerText="나의 사주 팔자" />
+      <Chapter
+        upperText={firstSectionText.chapter[0]}
+        lowerText={firstSectionText.chapter[1]}
+      />
       <Image
         className=""
         src={"/first-img.png"}
@@ -37,7 +42,7 @@ export default function FirstSection() {
           <UpCloud width={215 * rate} />
           <div className="absolute inset-0 top-1/8 text-black flex items-center justify-center">
             <p className="text-xs max-w-3/5 ssm:text-sm text-center break-keep leading-snug">
-              이제 본격적으로 ㅇㅇ님의 사주팔자를 분석해볼 차례네요.
+              {firstSectionText.cloud(name)}
             </p>
           </div>
         </div>
