@@ -16,7 +16,14 @@ export default function ThirdSection() {
         />
       </div>
       <div className="absolute -top-1/3 left-1/10">
-        <DownCloud width={239 * rate} />
+        <div className="realtive">
+          <DownCloud width={239 * rate} />
+          <div className="absolute inset-0 -top-1/8 text-black flex items-center justify-center">
+            <p className="text-xs max-w-3/5 ssm:text-sm text-center break-keep leading-snug">
+              제가 ㅇㅇ님의 사주를 보기 쉽게 표로 정리했어요.
+            </p>
+          </div>
+        </div>
       </div>
       <Image
         src={"/third.png"}

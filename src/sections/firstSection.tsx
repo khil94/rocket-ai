@@ -33,7 +33,14 @@ export default function FirstSection() {
         alt="first-head"
       />
       <div className="absolute left-1/50 bottom-0 translate-y-2/3">
-        <UpCloud width={239 * rate} />
+        <div className="relative">
+          <UpCloud width={215 * rate} />
+          <div className="absolute inset-0 top-1/8 text-black flex items-center justify-center">
+            <p className="text-xs max-w-3/5 ssm:text-sm text-center break-keep leading-snug">
+              이제 본격적으로 ㅇㅇ님의 사주팔자를 분석해볼 차례네요.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
