@@ -1,11 +1,12 @@
 import Chapter from "@/components/chapter";
-import { rate } from "@/constants/rate";
+import { useResponsiveRate } from "@/hooks/useResponsiveRate";
 import Image from "next/image";
 import UpCloud from "../assets/up-cloud.svg";
 
 export default function FirstSection() {
+  const rate = useResponsiveRate();
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full mb-30">
       <div className="absolute inset-0 pointer-events-none">
         <div
           className="absolute top-0 left-0 w-full"
@@ -31,8 +32,8 @@ export default function FirstSection() {
         height={rate * 752}
         alt="first-head"
       />
-      <div className="absolute left-5 bottom-0 translate-y-2/3">
-        <UpCloud />
+      <div className="absolute left-1/50 bottom-0 translate-y-2/3">
+        <UpCloud width={239 * rate} />
       </div>
     </div>
   );

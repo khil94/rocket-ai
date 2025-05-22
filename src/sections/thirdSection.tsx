@@ -1,8 +1,9 @@
-import { rate } from "@/constants/rate";
+import { useResponsiveRate } from "@/hooks/useResponsiveRate";
 import Image from "next/image";
 import DownCloud from "../assets/down-cloud.svg";
 
 export default function ThirdSection() {
+  const rate = useResponsiveRate();
   return (
     <div className="relative w-full h-full">
       <div className="absolute inset-0 pointer-events-none">
@@ -14,8 +15,8 @@ export default function ThirdSection() {
           }}
         />
       </div>
-      <div className="absolute left-5 -top-30 ">
-        <DownCloud />
+      <div className="absolute -top-1/3 left-1/10">
+        <DownCloud width={239 * rate} />
       </div>
       <Image
         src={"/third.png"}

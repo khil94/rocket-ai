@@ -1,9 +1,10 @@
-import { rate } from "@/constants/rate";
+import { useResponsiveRate } from "@/hooks/useResponsiveRate";
 import Image from "next/image";
 
 export default function SecondSection() {
+  const rate = useResponsiveRate();
   return (
-    <div className="relative w-full h-full">
+    <div className="relative w-full h-full mb-10">
       <Image
         className="absolute bottom-1/10 left-0 opacity-[80%]"
         src={"/cloud.png"}
