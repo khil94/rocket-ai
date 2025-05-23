@@ -41,7 +41,7 @@ export default function FirstSection() {
         <div className="relative">
           <UpCloud width={215 * rate} />
           <div className="absolute inset-0 top-1/8 text-black flex items-center justify-center">
-            <p className="text-[4vw] max-w-3/5 ssm:text-sm text-center break-keep leading-snug">
+            <p className="text-[3.5vw] max-w-3/5 ssm:text-sm text-center break-keep leading-snug">
               {firstSectionText.cloud(name)}
             </p>
           </div>
