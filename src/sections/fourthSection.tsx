@@ -5,7 +5,7 @@ export default function FourthSection() {
   const rate = useResponsiveRate();
   return (
     <div
-      className={`relative w-full h-full p-3
+      className={`relative -mt-[5%] w-full h-full flex justify-center
     `}
     >
       <div
