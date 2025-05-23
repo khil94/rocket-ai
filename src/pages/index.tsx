@@ -11,7 +11,6 @@ export default function Home() {
         <SecondSection />
         <ThirdSection />
         <FourthSection />
-        {/* <Image src={"/second.jpg"} width={300} height={100} alt="second" /> */}
       </main>
     </div>
   );
