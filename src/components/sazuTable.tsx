@@ -23,9 +23,9 @@ export default function SazuTable() {
   function TH({ up, down }: { up: string; down: string }) {
     return (
       <td>
-        <div className="flex flex-col break-keep items-center px-[1%]">
-          <span className="ssm:text-sm text-[3vw]">{up}</span>
-          <span className="ssm:text-xs text-[2vw]">{`(${down})`}</span>
+        <div className="flex flex-col break-keep items-center ">
+          <span className="ssm:text-xs text-[3vw]">{up}</span>
+          <span className="ssm:text-[.5rem] text-[2vw]">{`(${down})`}</span>
         </div>
       </td>
     );
@@ -34,14 +34,14 @@ export default function SazuTable() {
   return (
     <table
       className={`
-      text-center border-r-1 border-b-1 
+      text-center border-r-1 border-b-1 w-full
 
       [&_td]:border-r-[.5px] [&_td]:first:bg-transparent [&_td]:bg-white
       [&_th]:ssm:text-xl [&_th]:text-[4vw]
       [&_tr,&_thead]:border-b-1 
       [&_th,&_td]:border-r-[.5px] [&_th,&_td]:border-r-[#8A8A8A]
     [&_th,&_td]:first:border-black [&_th,&_td]:first:border-r-1
-      [&_th,&_td]:p-[1%] [&_tr]:h-0 
+      [&_th,&_td]:p-[1.5%] [&_tr]:h-0 
     `}
     >
       <colgroup>
