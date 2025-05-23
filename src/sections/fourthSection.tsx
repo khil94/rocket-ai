@@ -7,7 +7,7 @@ export default function FourthSection() {
   const birth = "1980년 8월27일 08:10";
   return (
     <div
-      className={`relative -mt-[5%] w-full h-full flex justify-center
+      className={`relative -mt-[5%] w-full h-full flex justify-center pb-[10%]
     `}
     >
       <div
