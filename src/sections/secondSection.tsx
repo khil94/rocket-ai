@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SecondSection() {
   return (
-    <section className="w-full pt-[4.5rem]">
+    <section className="w-full pt-[4.625rem]">
       <div className="w-full flex flex-row [&_img]:min-w-0 gap-9">
         <div className="pb-9 relative content-end shrink-0 w-[41%]">
           <Image
