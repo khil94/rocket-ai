@@ -23,7 +23,7 @@ export default function FirstSection() {
         <div className="bg-gradient-to-b from-black to-transparent w-full h-[34%] absolute" />
         <div className="bg-gradient-to-t from-gradient-white to-transparent w-full h-[26%] absolute -bottom-0" />
         <Image
-          src={"/section-1.png"}
+          src={"/section-1.webp"}
           width={750}
           height={1304}
           priority
