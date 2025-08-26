@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body
-        className={`min-h-dvh h-fit flex justify-center bg-red-500 ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`min-h-dvh h-fit flex justify-center bg-amber-100 ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="max-w-[448px] w-full bg-background-white">
           {children}
